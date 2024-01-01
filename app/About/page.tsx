@@ -22,7 +22,7 @@ export default function About() {
                 <div className="flex flex-wrap gap-4">
                     
                     <div className="flex flex-[1_1_500px] gap-2">
-                        <div className="flex flex-col">{Numbers.map( number =><span>{number}</span> )}</div>
+                        <div className="flex flex-col">{Numbers.map( number =><span key={number}>{number}</span> )}</div>
                         <div className="">
                             /**
                             * About me
