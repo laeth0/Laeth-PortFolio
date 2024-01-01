@@ -13,7 +13,7 @@ export default function Footer() {
                 </span>
             </div>
             <div className="flex gap-1 items-center px-4 border-s border-solid border-GeneralBorder">
-                <span>Laeth0</span>
+                <span>@Laeth0</span>
                 <Image src="/github.svg" alt="github" width="20" height="20"/>
             </div>
         </footer>

@@ -2,17 +2,16 @@ import Image from "next/image";
 
 export default function Hello() {
     return (
-        <div className="flex bg-MainBg w-full py-20 gap-16 relative ">
-            <Image className="fixed right-[7%] top-[5%] w-1/2" src="/BackgroundBlurs.png" alt="BackgroundBlurs" width="650" height="650" />
-            <div className="flex flex-col gap-20 flex-1 items-end">
+        <div className="flex bg-MainBg w-full h-[77vh] gap-16 px-4 border border-GeneralBorder border-solid bg-BackgroundBlurs bg-no-repeat sm:bg-contain bg-cover  bg-[78%]">
+            <div className="flex flex-col gap-20 flex-1 items-center  Tablet:items-end justify-center">
                 <div>
                     <span className="text-[#E5E9F0]">Hi all. I am</span>
                     <h1 className="text-[#E5E9F0] text-6xl">Laeth Nueirat</h1>
-                    <h2 className="text-GeneralBlue text-3xl">&gt; Front-end developer</h2>
+                    <h2 className="text-GeneralBlue text-xl sm:text-3xl">&gt; Full Stack Developer</h2>
                 </div>
-                <div>
-                    <p className="text-GeneralGray">// complete the game to continue</p>
-                    <p className="text-GeneralGray">// you can also see it on my Github page</p>
+                <div className="text-xs sm:text-lg">
+                    <p className="text-GeneralGray">// I Love Coding 24/7</p>
+                    <p className="text-GeneralGray">// find my profile on Github:</p>
                     <p className="flex gap-2">
                         <span className="text-GeneralBlue">const</span>
                         <span className="text-GeneralGreen">githubLink</span>
@@ -21,8 +20,9 @@ export default function Hello() {
                     </p>
                 </div>
             </div>
-            <div className="flex-1">
-                <Image src="/SnakeGame.png" width={400} height={400} alt="SnakeGame" />
+            
+            <div className="flex-1  hidden Tablet:flex select-none ">
+                <Image className="rounded-xl0 " src="/MyPhoto.png" width={400} height={350} alt="SnakeGame" />
             </div>
         </div>
     )
