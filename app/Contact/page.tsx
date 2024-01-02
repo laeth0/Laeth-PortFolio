@@ -1,7 +1,7 @@
 "use client"
 import Image from "next/image";
 import CodeSpace from "@/app/components/CodeSpace";
-import {useState} from "react";
+import React, {useState} from "react";
 
 export default function Contact(){
     const [Data, setData] = useState<{Name:string,Email:string,Message:string}>({Name:"",Email:"",Message:""});
@@ -88,16 +88,16 @@ export default function Contact(){
                     <div className="flex flex-col flex-[1_1_400px] border-e border-GeneralBorder border-solid text-xs ">
                         <form action="" className="px-[15%] pt-4 flex flex-col gap-6">
                             <div className="flex flex-col gap-3 ">
-                                <label htmlFor="Name">_name:</label>
-                                <input onChange={(e)=>setData({...Data,Name:e.target.value})} className="rounded py-1 focus-visible:outline-0 bg-CodeBg border border-solid border-GeneralGray shadow-[0px_0px_0px_2px_rgba(96,123,150,0.30)]" type="text" id="Name"/>
+                                <label htmlFor="Name"> _name:</label>
+                                <input onChange={(e:React.ChangeEvent<HTMLInputElement>)=>setData({...Data,Name:e.target.value})} className="rounded py-1 focus-visible:outline-0 bg-CodeBg border border-solid border-GeneralGray shadow-[0px_0px_0px_2px_rgba(96,123,150,0.30)]" type="text" id="Name"/>
                             </div>
                             <div className="flex flex-col gap-3 ">
                                 <label htmlFor="Email">_email:</label>
-                                <input onChange={(e)=>setData({...Data,Email:e.target.value})} className="rounded py-1 focus-visible:outline-0 bg-CodeBg border border-solid border-GeneralGray focus-visible:shadow-[0px_0px_0px_2px_rgba(96,123,150,0.30)]" type="email" id="Email"/>
+                                <input onChange={(e:React.ChangeEvent<HTMLInputElement>)=>setData({...Data,Email:e.target.value})} className="rounded py-1 focus-visible:outline-0 bg-CodeBg border border-solid border-GeneralGray focus-visible:shadow-[0px_0px_0px_2px_rgba(96,123,150,0.30)]" type="email" id="Email"/>
                             </div>
                             <div className="flex flex-col gap-3 ">
                                 <label htmlFor="Message">_message:</label>
-                                <textarea onChange={(e)=>setData({...Data,Message:e.target.value})} id="Message" rows="7" className="rounded bg-CodeBg focus-visible:outline-0 p-2 border border-solid border-GeneralGray focus-visible:shadow-[0px_0px_0px_2px_rgba(96,123,150,0.30)]"></textarea>
+                                <textarea onChange={(e:React.ChangeEvent<HTMLTextAreaElement>)=>setData({...Data,Message:e.target.value})} id="Message" rows={7} className="rounded bg-CodeBg focus-visible:outline-0 p-2 border border-solid border-GeneralGray focus-visible:shadow-[0px_0px_0px_2px_rgba(96,123,150,0.30)]"></textarea>
                             </div>
                             <button className="text-white bg-ButtonBg w-fit p-2 rounded" type="submit">submit-message</button>
                         </form>

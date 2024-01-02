@@ -57,93 +57,87 @@ export default function About() {
 
                 {/* Lower */}
                 <div className="flex gap-8 flex-1 flex-wrap py-6 px-[5%]">
-                    <div className="flex-[1_1_300px] ">
-                        <h2>TMDB // _ui-animations</h2>
-                        <div className="bg-CodeBg rounded-3xl relative">
+                    {/*knowledgeAcademy*/}
+                    <div className="flex-[1_1_300px] flex flex-col gap-2">
+                        <h2 className="text-SecondaryBlue ps-4">Knowledge Academy</h2>
+                        <div className="bg-CodeBg rounded-3xl relative flex-1 flex flex-col justify-between">
                             <span className="absolute top-3 right-4 p-1 rounded bg-[#86E1F9]" >
                                 <Image src="/ReactIcon.svg" alt="ReactIcon" width="20" height="20"/>
                              </span>
-                            <Image src="/ProjectImage.png" className="select-none w-full" alt="TMDB" width="100"
-                                   height="100"/>
+                            <Image src="/knowledgeAcademy.png" className="select-none w-full rounded-t-2xl" alt="TMDB" width="500" height="500"/>
                             <div className="p-4 flex flex-col gap-2">
                                 <p className="text-balance">Duis aute irure dolor in velit esse cillum dolore.</p>
-                                <a href="https://tmdb-laeth0.vercel.app/"
-                                   className="bg-ButtonBg p-3 rounded w-fit">view-project</a>
+                                <a href="https://laeth0.github.io/knowledge-Academy/" className="bg-ButtonBg p-3 rounded w-fit" target="_blank">view-project</a>
                             </div>
                         </div>
                     </div>
-                    <div className="flex-[1_1_300px] ">
-                        <h2>TMDB // _ui-animations</h2>
-                        <div className="bg-CodeBg rounded-3xl relative">
+                    {/*BestEats*/}
+                    <div className="flex-[1_1_300px]  flex flex-col gap-2">
+                        <h2 className="text-SecondaryBlue ps-4">Best Eats</h2>
+                        <div className="bg-CodeBg rounded-3xl relative flex-1 flex flex-col justify-between">
                             <span className="absolute top-3 right-4 p-1 rounded bg-[#86E1F9]" >
                                 <Image src="/ReactIcon.svg" alt="ReactIcon" width="20" height="20"/>
                              </span>
-                            <Image src="/ProjectImage.png" className="select-none w-full" alt="TMDB" width="100"
-                                   height="100"/>
+                            <Image src="/BestEats.png" className="select-none w-full rounded-t-2xl" alt="TMDB" width="500"  height="500"/>
                             <div className="p-4 flex flex-col gap-2">
                                 <p className="text-balance">Duis aute irure dolor in velit esse cillum dolore.</p>
-                                <a href="https://tmdb-laeth0.vercel.app/"
-                                   className="bg-ButtonBg p-3 rounded w-fit">view-project</a>
+                                <a href="https://laeth0.github.io/Best-Eats/" className="bg-ButtonBg p-3 rounded w-fit" target="_blank">view-project</a>
                             </div>
                         </div>
                     </div>
-                    <div className="flex-[1_1_300px] ">
-                        <h2>TMDB // _ui-animations</h2>
-                        <div className="bg-CodeBg rounded-3xl relative">
+                    {/*portfolio*/}
+                    <div className="flex-[1_1_300px]  flex flex-col gap-2">
+                        <h2 className="text-SecondaryBlue ps-4">ProtFolio Theme</h2>
+                        <div className="bg-CodeBg rounded-3xl relative flex-1 flex flex-col justify-between">
                             <span className="absolute top-3 right-4 p-1 rounded bg-[#86E1F9]" >
                                 <Image src="/ReactIcon.svg" alt="ReactIcon" width="20" height="20"/>
                              </span>
-                            <Image src="/ProjectImage.png" className="select-none w-full" alt="TMDB" width="100"
-                                   height="100"/>
+                            <Image src="/portfolio.png" className="select-none w-full rounded-t-2xl" alt="TMDB" width="500" height="500"/>
                             <div className="p-4 flex flex-col gap-2">
                                 <p className="text-balance">Duis aute irure dolor in velit esse cillum dolore.</p>
-                                <a href="https://tmdb-laeth0.vercel.app/"
-                                   className="bg-ButtonBg p-3 rounded w-fit">view-project</a>
+                                <a href="https://laeth0.github.io/PFolio/" className="bg-ButtonBg p-3 rounded w-fit" target="_blank">view-project</a>
                             </div>
                         </div>
                     </div>
-                    <div className="flex-[1_1_300px] ">
-                        <h2>TMDB // _ui-animations</h2>
-                        <div className="bg-CodeBg rounded-3xl relative">
+                    {/*TMDB*/}
+                    <div className="flex-[1_1_300px]  flex flex-col gap-2">
+                        <h2 className="text-SecondaryBlue ps-4">The Movie Database(TMDB)</h2>
+                        <div className="bg-CodeBg rounded-3xl relative flex-1 flex flex-col justify-between">
                             <span className="absolute top-3 right-4 p-1 rounded bg-[#86E1F9]" >
                                 <Image src="/ReactIcon.svg" alt="ReactIcon" width="20" height="20"/>
                              </span>
-                            <Image src="/ProjectImage.png" className="select-none w-full" alt="TMDB" width="100"
-                                   height="100"/>
+                            <Image src="/TMDB.png" className="select-none w-full rounded-t-2xl" alt="TMDB" width="500" height="500"/>
                             <div className="p-4 flex flex-col gap-2">
                                 <p className="text-balance">Duis aute irure dolor in velit esse cillum dolore.</p>
-                                <a href="https://tmdb-laeth0.vercel.app/"
-                                   className="bg-ButtonBg p-3 rounded w-fit">view-project</a>
+                                <a href="https://tmdb-laeth0.vercel.app/" className="bg-ButtonBg p-3 rounded w-fit" target="_blank">view-project</a>
                             </div>
                         </div>
                     </div>
-                    <div className="flex-[1_1_300px] ">
-                        <h2>TMDB // _ui-animations</h2>
-                        <div className="bg-CodeBg rounded-3xl relative">
+                    {/*avada*/}
+                    <div className="flex-[1_1_300px]  flex flex-col gap-2">
+                        <h2 className="text-SecondaryBlue ps-4">Avada</h2>
+                        <div className="bg-CodeBg rounded-3xl relative flex-1 flex flex-col justify-between">
                             <span className="absolute top-3 right-4 p-1 rounded bg-[#86E1F9]" >
                                 <Image src="/ReactIcon.svg" alt="ReactIcon" width="20" height="20"/>
                              </span>
-                            <Image src="/ProjectImage.png" className="select-none w-full" alt="TMDB" width="100"
-                                   height="100"/>
+                            <Image src="/avada.png" className="select-none w-full rounded-t-2xl" alt="TMDB" width="500" height="500"/>
                             <div className="p-4 flex flex-col gap-2">
                                 <p className="text-balance">Duis aute irure dolor in velit esse cillum dolore.</p>
-                                <a href="https://tmdb-laeth0.vercel.app/"
-                                   className="bg-ButtonBg p-3 rounded w-fit">view-project</a>
+                                <a href="https://laeth0.github.io/Avada/" className="bg-ButtonBg p-3 rounded w-fit" target="_blank">view-project</a>
                             </div>
                         </div>
                     </div>
-                    <div className="flex-[1_1_300px] ">
-                        <h2>TMDB // _ui-animations</h2>
-                        <div className="bg-CodeBg rounded-3xl relative">
+                    {/*instagram*/}
+                    <div className="flex-[1_1_300px]  flex flex-col gap-2">
+                        <h2 className="text-SecondaryBlue ps-4">Instagram</h2>
+                        <div className="bg-CodeBg rounded-3xl relative flex-1 flex flex-col justify-between">
                             <span className="absolute top-3 right-4 p-1 rounded bg-[#86E1F9]" >
                                 <Image src="/ReactIcon.svg" alt="ReactIcon" width="20" height="20"/>
                              </span>
-                            <Image src="/ProjectImage.png" className="select-none w-full" alt="TMDB" width="100"
-                                   height="100"/>
+                            <Image src="/instagram.png" className="select-none w-full rounded-t-2xl" alt="TMDB" width="500" height="500"/>
                             <div className="p-4 flex flex-col gap-2">
                                 <p className="text-balance">Duis aute irure dolor in velit esse cillum dolore.</p>
-                                <a href="https://tmdb-laeth0.vercel.app/"
-                                   className="bg-ButtonBg p-3 rounded w-fit">view-project</a>
+                                <a href="https://github.com/laeth0/instagram-clone"  className="bg-ButtonBg p-3 rounded w-fit" target="_blank">view-project</a>
                             </div>
                         </div>
                     </div>
