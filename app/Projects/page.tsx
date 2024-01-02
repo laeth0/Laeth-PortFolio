@@ -20,7 +20,7 @@ export default function About() {
                 </div>
                 <div className="flex gap-2">
                     <input type="checkbox" id="CSS" className="mix-blend-soft-light peer/CSS"/>
-                    <Image src="/CSSIcon.svg" alt="CSSIcon" width="20" height="20"/>
+                    <Image src="/CssIcon.svg" alt="CSSIcon" width="20" height="20"/>
                     <label htmlFor="CSS" className="peer-checked/CSS:text-white duration-300">CSS</label>
                 </div>
                 <div className="flex gap-2">
