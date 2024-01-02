@@ -60,10 +60,10 @@ export default function About() {
                     {/*knowledgeAcademy*/}
                     <div className="flex-[1_1_300px] flex flex-col gap-2">
                         <h2 className="text-SecondaryBlue ps-4">Knowledge Academy</h2>
-                        <div className="bg-CodeBg rounded-3xl relative flex-1 flex flex-col justify-between">
+                        <div className="bg-CodeBg rounded-3xl relative flex-1 flex flex-col justify-between hover:shadow-[0px_0px_20px_6px_rgba(200,208,216,0.46)]">
                             <span className="absolute top-3 right-4 p-1 rounded bg-[#86E1F9]" >
                                 <Image src="/ReactIcon.svg" alt="ReactIcon" width="20" height="20"/>
-                             </span>
+                            </span>
                             <Image src="/knowledgeAcademy.png" className="select-none w-full rounded-t-2xl" alt="TMDB" width="500" height="500"/>
                             <div className="p-4 flex flex-col gap-2">
                                 <p className="text-balance">Duis aute irure dolor in velit esse cillum dolore.</p>
@@ -74,7 +74,7 @@ export default function About() {
                     {/*BestEats*/}
                     <div className="flex-[1_1_300px]  flex flex-col gap-2">
                         <h2 className="text-SecondaryBlue ps-4">Best Eats</h2>
-                        <div className="bg-CodeBg rounded-3xl relative flex-1 flex flex-col justify-between">
+                        <div className="bg-CodeBg rounded-3xl relative flex-1 flex flex-col justify-between hover:shadow-[0px_0px_20px_6px_rgba(200,208,216,0.46)]">
                             <span className="absolute top-3 right-4 p-1 rounded bg-[#86E1F9]" >
                                 <Image src="/ReactIcon.svg" alt="ReactIcon" width="20" height="20"/>
                              </span>
@@ -88,7 +88,7 @@ export default function About() {
                     {/*portfolio*/}
                     <div className="flex-[1_1_300px]  flex flex-col gap-2">
                         <h2 className="text-SecondaryBlue ps-4">ProtFolio Theme</h2>
-                        <div className="bg-CodeBg rounded-3xl relative flex-1 flex flex-col justify-between">
+                        <div className="bg-CodeBg rounded-3xl relative flex-1 flex flex-col justify-between hover:shadow-[0px_0px_20px_6px_rgba(200,208,216,0.46)]">
                             <span className="absolute top-3 right-4 p-1 rounded bg-[#86E1F9]" >
                                 <Image src="/ReactIcon.svg" alt="ReactIcon" width="20" height="20"/>
                              </span>
@@ -102,7 +102,7 @@ export default function About() {
                     {/*TMDB*/}
                     <div className="flex-[1_1_300px]  flex flex-col gap-2">
                         <h2 className="text-SecondaryBlue ps-4">The Movie Database(TMDB)</h2>
-                        <div className="bg-CodeBg rounded-3xl relative flex-1 flex flex-col justify-between">
+                        <div className="bg-CodeBg rounded-3xl relative flex-1 flex flex-col justify-between hover:shadow-[0px_0px_20px_6px_rgba(200,208,216,0.46)]">
                             <span className="absolute top-3 right-4 p-1 rounded bg-[#86E1F9]" >
                                 <Image src="/ReactIcon.svg" alt="ReactIcon" width="20" height="20"/>
                              </span>
@@ -116,7 +116,7 @@ export default function About() {
                     {/*avada*/}
                     <div className="flex-[1_1_300px]  flex flex-col gap-2">
                         <h2 className="text-SecondaryBlue ps-4">Avada</h2>
-                        <div className="bg-CodeBg rounded-3xl relative flex-1 flex flex-col justify-between">
+                        <div className="bg-CodeBg rounded-3xl relative flex-1 flex flex-col justify-between hover:shadow-[0px_0px_20px_6px_rgba(200,208,216,0.46)]">
                             <span className="absolute top-3 right-4 p-1 rounded bg-[#86E1F9]" >
                                 <Image src="/ReactIcon.svg" alt="ReactIcon" width="20" height="20"/>
                              </span>
@@ -130,7 +130,7 @@ export default function About() {
                     {/*instagram*/}
                     <div className="flex-[1_1_300px]  flex flex-col gap-2">
                         <h2 className="text-SecondaryBlue ps-4">Instagram</h2>
-                        <div className="bg-CodeBg rounded-3xl relative flex-1 flex flex-col justify-between">
+                        <div className="bg-CodeBg rounded-3xl relative flex-1 flex flex-col justify-between hover:shadow-[0px_0px_20px_6px_rgba(200,208,216,0.46)]">
                             <span className="absolute top-3 right-4 p-1 rounded bg-[#86E1F9]" >
                                 <Image src="/ReactIcon.svg" alt="ReactIcon" width="20" height="20"/>
                              </span>

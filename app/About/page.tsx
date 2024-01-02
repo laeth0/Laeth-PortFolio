@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import CodeSpace from "@/app/components/CodeSpace";
+import React from "react";
 
 export default function About() {
 
@@ -58,11 +59,11 @@ export default function About() {
                         <div className="mt-3 group-open:animate-fadeIn flex flex-col gap-y-2 border-b md:border-none border-GeneralBorder border-solid">
                             <div className="flex gap-1 ps-2">
                                 <Image src="/MailIcon.svg" alt="Triangle.svg" width="15" height="15"/>
-                                <span>laethraed0</span>
+                                <a className="hover:text-white duration-500 hover:scale-105" href="mailto:laethraed0@gmail.com">laethraed0</a>
                             </div>
                             <div className="flex gap-1 ps-2">
                                 <Image src="/PhoneIcon.svg" alt="PhoneIcon.svg" width="15" height="15"/>
-                                <span>0569768777</span>
+                                <a className="hover:text-white duration-500 hover:scale-105" href="tel:+97569768777">0569768777</a>
                             </div>
                         </div>
                     </details>
