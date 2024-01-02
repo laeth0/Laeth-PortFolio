@@ -25,27 +25,27 @@ export default function About() {
                         <div className="my-3 group-open:animate-fadeIn ">
                             <div className="flex ps-2 gap-1">
                                 <Image src="Arrow.svg" alt="Arrow.svg" height="10" width="10"/>
-                                <Image src="OrangeFile.svg" alt="OrangeFile.svg" height="15" width="15"/>
+                                <Image src="/OrangeFile.svg" alt="OrangeFile.svg" height="15" width="15"/>
                                 <span className="text-white">bio</span>
                             </div>
                             <div className="flex ps-2 gap-1">
                                 <Image src="Arrow.svg" alt="Arrow.svg" height="10" width="10"/>
-                                <Image src="GreenFile.svg" alt="OrangeFile.svg" height="15" width="15"/>
+                                <Image src="/GreenFile.svg" alt="OrangeFile.svg" height="15" width="15"/>
                                 <span>interests</span>
                             </div>
                             <div className="flex ps-2 gap-1">
                                 <Image src="Arrow.svg" alt="Arrow.svg" height="10" width="10"/>
-                                <Image src="BlueFile.svg" alt="OrangeFile.svg" height="15" width="15"/>
+                                <Image src="/BlueFile.svg" alt="OrangeFile.svg" height="15" width="15"/>
                                 <span>education</span>
                             </div>
                             <div className="flex ps-2 gap-1">
                                 <Image src="Arrow.svg" className="invisible" alt="Arrow.svg" height="10" width="10"/>
-                                <Image src="marddown.svg" alt="marddown.svg" height="15" width="15"/>
+                                <Image src="/Markdown.svg" alt="Markdown.svg" height="15" width="15"/>
                                 <span>high-school</span>
                             </div>
                             <div className="flex ps-2 gap-1">
                                 <Image src="Arrow.svg" className="invisible" alt="Arrow.svg" height="10" width="10"/>
-                                <Image src="marddown.svg" alt="marddown.svg" height="15" width="15"/>
+                                <Image src="/Markdown.svg" alt="Markdown.svg" height="15" width="15"/>
                                 <span>university</span>
                             </div>
                         </div>
