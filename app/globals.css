@@ -5,3 +5,20 @@
 *{
   font-family: 'Fira Code', monospace;
 }
+
+.w-tc-editor{
+  color: #607B96 !important;
+}
+
+.w-tc-editor {
+  --color-fg-default: #24292f !important; 
+  --color-canvas-subtle: #f6f8fa !important;
+  --color-prettylights-syntax-comment: #607B96 !important;
+  --color-prettylights-syntax-entity-tag: #43D9AD !important;
+  --color-prettylights-syntax-entity: #8250df !important;
+  --color-prettylights-syntax-sublimelinter-gutter-mark: #8c959f !important;
+  --color-prettylights-syntax-constant: #5565E8 !important;
+  --color-prettylights-syntax-string: #C98BDF !important;
+  --color-prettylights-syntax-keyword: #E99287 !important;
+  --color-prettylights-syntax-markup-bold: #24292f !important;
+}

@@ -23,6 +23,7 @@ const config: Config = {
         "GeneralPink": '#C98BDF',
         "GeneralBorder": '#1E2D3D',
         "CodeBg": '#011221',
+        "ButtonBg": '#1c2b3a',
       },
       backgroundImage:{
         "BackgroundBlurs": "url('/BackgroundBlurs.png')",
