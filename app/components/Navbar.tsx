@@ -22,7 +22,7 @@ export default function Navbar() {
                         <li className="border-e border-GeneralBorder border-solid px-4 h-full flex items-center"><Link href="/Projects">_projects</Link></li>
                     </ul>
                     <div className="h-full">
-                        <span className="border-s border-GeneralBorder border-solid ps-4 h-full flex items-center">_contact-me</span>
+                        <span className="border-s border-GeneralBorder border-solid ps-4 h-full flex items-center"><Link href="/Contact">_contact-me</Link></span>
                     </div>
                 </nav>
                 <div className="flex IPhone:hidden cursor-pointer w-8">

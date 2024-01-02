@@ -13,7 +13,7 @@ export default function NavbarIcon({toggleShow, Show}: { toggleShow: () => void,
             <div className="py-4 w-full text-white border-b border-GeneralBorder border-solid"><Link href="/">_hello</Link></div>
             <div className="py-4 w-full text-white border-b border-GeneralBorder border-solid"><Link href="/About">_about-me</Link></div>
             <div className="py-4 w-full text-white border-b border-GeneralBorder border-solid"><Link href="/Projects">_projects</Link></div>
-            <div className="py-4 w-full text-white border-b border-GeneralBorder border-solid">_contact-me</div>
+            <div className="py-4 w-full text-white border-b border-GeneralBorder border-solid"><Link href="/Contact">_contact-me</Link></div>
         </div>
     )
 }
