@@ -21,8 +21,8 @@ export default function Hello() {
                 </div>
             </div>
             
-            <div className="flex-1  hidden Tablet:flex select-none items-center ">
-                <Image className="rounded-xl0 h-3/4" src="/MyPhoto.png" width={400} height={350} alt="SnakeGame" />
+            <div className="flex-1  hidden Tablet:flex select-none items-center">
+                <Image className="rounded-xl0 h-3/4" src="/MyPhoto.png" width={400} loading={"lazy"} height={350} alt="SnakeGame" />
             </div>
         </div>
     )
