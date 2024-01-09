@@ -5,7 +5,6 @@ export default function About() {
     return (
         <div className="bg-MainBg w-full min-h-[77vh] flex border border-GeneralBorder border-solid flex-wrap">
 
-
             {/* Icons */}
             <div className=" flex flex-grow Tablet:flex-grow-0 Tablet:flex-col flex-wrap Tablet:flex-nowrap gap-4 border border-GeneralBorder border-solid p-4 ">
                 <div className="flex gap-2">
@@ -56,9 +55,9 @@ export default function About() {
                 </div>
 
                 {/* Lower */}
-                <div className="flex gap-8 flex-1 flex-wrap py-6 px-[5%]">
+                <div className="grid grid-cols-1 IPhone:grid-cols-2 xl:grid-cols-3 gap-12 py-8 px-[7%]">
                     {/*knowledgeAcademy*/}
-                    <div className="flex-[1_1_300px] flex flex-col gap-2">
+                    <div className="flex flex-col gap-2">
                         <h2 className="text-SecondaryBlue ps-4">Knowledge Academy</h2>
                         <div className="bg-CodeBg rounded-3xl relative flex-1 flex flex-col justify-between hover:shadow-[0px_0px_20px_6px_rgba(200,208,216,0.46)] duration-500">
                             <span className="absolute top-3 right-4 p-1 rounded bg-[#86E1F9]" >
@@ -72,7 +71,7 @@ export default function About() {
                         </div>
                     </div>
                     {/*BestEats*/}
-                    <div className="flex-[1_1_300px]  flex flex-col gap-2">
+                    <div className="flex flex-col gap-2">
                         <h2 className="text-SecondaryBlue ps-4">Best Eats</h2>
                         <div className="bg-CodeBg rounded-3xl relative flex-1 flex flex-col justify-between hover:shadow-[0px_0px_20px_6px_rgba(200,208,216,0.46)] duration-500">
                             <span className="absolute top-3 right-4 p-1 rounded bg-[#86E1F9]" >
@@ -86,7 +85,7 @@ export default function About() {
                         </div>
                     </div>
                     {/*portfolio*/}
-                    <div className="flex-[1_1_300px]  flex flex-col gap-2">
+                    <div className="flex flex-col gap-2">
                         <h2 className="text-SecondaryBlue ps-4">ProtFolio Theme</h2>
                         <div className="bg-CodeBg rounded-3xl relative flex-1 flex flex-col justify-between hover:shadow-[0px_0px_20px_6px_rgba(200,208,216,0.46)] duration-500">
                             <span className="absolute top-3 right-4 p-1 rounded bg-[#86E1F9]" >
@@ -100,7 +99,7 @@ export default function About() {
                         </div>
                     </div>
                     {/*TMDB*/}
-                    <div className="flex-[1_1_300px]  flex flex-col gap-2">
+                    <div className="flex flex-col gap-2">
                         <h2 className="text-SecondaryBlue ps-4">The Movie Database(TMDB)</h2>
                         <div className="bg-CodeBg rounded-3xl relative flex-1 flex flex-col justify-between hover:shadow-[0px_0px_20px_6px_rgba(200,208,216,0.46)] duration-500">
                             <span className="absolute top-3 right-4 p-1 rounded bg-[#86E1F9]" >
@@ -114,7 +113,7 @@ export default function About() {
                         </div>
                     </div>
                     {/*avada*/}
-                    <div className="flex-[1_1_300px]  flex flex-col gap-2">
+                    <div className="flex flex-col gap-2">
                         <h2 className="text-SecondaryBlue ps-4">Avada</h2>
                         <div className="bg-CodeBg rounded-3xl relative flex-1 flex flex-col justify-between hover:shadow-[0px_0px_20px_6px_rgba(200,208,216,0.46)] duration-500">
                             <span className="absolute top-3 right-4 p-1 rounded bg-[#86E1F9]" >
@@ -128,7 +127,7 @@ export default function About() {
                         </div>
                     </div>
                     {/*instagram*/}
-                    <div className="flex-[1_1_300px]  flex flex-col gap-2">
+                    <div className="flex flex-col gap-2">
                         <h2 className="text-SecondaryBlue ps-4">Instagram</h2>
                         <div className="bg-CodeBg rounded-3xl relative flex-1 flex flex-col justify-between hover:shadow-[0px_0px_20px_6px_rgba(200,208,216,0.46)] duration-500">
                             <span className="absolute top-3 right-4 p-1 rounded bg-[#86E1F9]" >

@@ -10,19 +10,19 @@ export default function Navbar() {
     const toggleShow = () => setShow(!Show)
     
     return (
-        <header className="bg-MainBg rounded-t-xl border border-GeneralBorder border-solid px-5 select-none">
+        <header className="bg-MainBg rounded-t-xl border border-GeneralBorder border-solid select-none">
             <div className="flex justify-between ">
-                <div className="pe-[10%] flex items-center">
-                    <span className="py-4"><Link href="/">Laeth Nueirat</Link></span>
+                <div className="pe-[7.5%] flex items-center">
+                    <span className="py-4 ps-5"><Link href="/">Laeth Nueirat</Link></span>
                 </div>
                 <nav className=" justify-between IPhone:flex hidden flex-1 items-center">
                     <ul className="flex h-full">
-                        <li className={`border-x border-GeneralBorder border-solid px-4 h-full flex items-center ${pathname === '/' ? 'text-white' : ''}`}><Link href="/">_hello</Link></li>
-                        <li className={`border-e border-GeneralBorder border-solid px-4 h-full flex items-center ${pathname === '/About' ? 'text-white' : ''}`}><Link href="/About">_about-me</Link></li>
-                        <li className={`border-e border-GeneralBorder border-solid px-4 h-full flex items-center ${pathname === '/Projects' ? 'text-white' : ''}`}><Link href="/Projects">_projects</Link></li>
+                        <li className={`border-x border-GeneralBorder border-solid px-4 h-full flex items-center ${pathname === '/' ? 'text-white border-b-4 border-b-GeneralOrange' : ''}`}><Link href="/">_hello</Link></li>
+                        <li className={`border-e border-GeneralBorder border-solid px-4 h-full flex items-center ${pathname === '/About' ? 'text-white border-b-4 border-b-GeneralOrange' : ''}`}><Link href="/About">_about-me</Link></li>
+                        <li className={`border-e border-GeneralBorder border-solid px-4 h-full flex items-center ${pathname === '/Projects' ? 'text-white border-b-4 border-b-GeneralOrange' : ''}`}><Link href="/Projects">_projects</Link></li>
                     </ul>
                     <div className="h-full">
-                        <span className={`border-s border-GeneralBorder border-solid ps-4 h-full flex items-center ${pathname === '/Contact' ? 'text-white' : ''}`}><Link href="/Contact">_contact-me</Link></span>
+                        <span className={`border-s border-GeneralBorder border-solid px-4 h-full flex items-center ${pathname === '/Contact' ? 'text-white border-b-4 border-b-GeneralOrange' : ''}`}><Link href="/Contact">_contact-me</Link></span>
                     </div>
                 </nav>
                 <div className="flex IPhone:hidden cursor-pointer w-8">
