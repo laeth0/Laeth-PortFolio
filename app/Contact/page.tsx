@@ -5,31 +5,31 @@ import React, { useState, useRef } from "react";
 import emailjs from '@emailjs/browser';
 
 export default function Contact() {
-    const [Data, setData] = useState<{ Name: string, Email: string, Message: string }>({ Name: "", Email: "", Message: "" });
+    const [Data, setData] = useState<{ from_name: string, from_email: string, message: string }>({ from_name: "", from_email: "", message: "" });
     const [isEmailSending, setIsEmailSending] = useState<Boolean>(false)
     const date = new Date(Date.now());
-    const formattedDate = date.toLocaleString('en-US', {
-        year: 'numeric',
-        weekday: 'short',
-        day: 'numeric',
-        month: 'short'
-    });
+    const formattedDate = date.toLocaleString('en-US', { year: 'numeric', weekday: 'short', day: 'numeric', month: 'short' });
+    const form = useRef<HTMLFormElement>(null);
 
-
-    const form = useRef();
-    const sendEmail = (e) => {
-        e.preventDefault();
-        emailjs.sendForm('service_7yzlyk7', 'template_6qijato', form.current, 'MKVFoNVXTu5kMO3kK')
-            .then(result => {
-                console.log(result.text);
-                setData({ Name: "", Email: "", Message: "" })
-                e.target.reset(); // this statement will reset the form after successfull submission
-                setIsEmailSending(true)
-            }, error => {
-                console.log(error.text)
-            });
+    const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+        const { name, value } = e.target;
+        setData({ ...Data, [name]: value });
     };
-    // to_name
+
+    const sendEmail = (e: React.ChangeEvent<HTMLFormElement>) => {
+        e.preventDefault();
+        if (form.current)
+            emailjs.sendForm('service_7yzlyk7', 'template_6qijato', form.current, 'MKVFoNVXTu5kMO3kK')
+                .then(result => {
+                    console.log(result.text);
+                    setData({ from_name: "", from_email: "", message: "" })
+                    e.target.reset(); // this statement will reset the form after successfull submission
+                    setIsEmailSending(true)
+                }, error => console.log(error.text)
+                );
+    };
+
+    const handleSendNewMessage = () => setIsEmailSending(false)
     return (
         <div className="bg-MainBg w-full min-h-[77vh]  grid md:grid-cols-12 border border-GeneralBorder border-solid ">
             {/* According */}
@@ -101,20 +101,20 @@ export default function Contact() {
                                 <div className="w-1/2 gap-4 flex flex-col  pt-4 ">
                                     <h2 className="text-white text-center text-[clamp(1.2rem,2.5vw,2rem)]" >Thank you! 🤘</h2>
                                     <p className="text-balance text-center">Your message has been accepted. You will recieve answer really soon!</p>
-                                    <button className="text-white bg-ButtonBg w-fit p-2 rounded cursor-pointer mx-auto" onClick={() => setIsEmailSending(false)}>send-new-message</button>
+                                    <button className="text-white bg-ButtonBg w-fit p-2 rounded cursor-pointer mx-auto" onClick={handleSendNewMessage}>send-new-message</button>
                                 </div> :
                                 <form ref={form} onSubmit={sendEmail} className="px-[15%] pt-4 flex flex-col gap-6">
                                     <div className="flex flex-col gap-3 ">
-                                        <label htmlFor="Name"  > _name:</label>
-                                        <input onChange={(e: React.ChangeEvent<HTMLInputElement>) => setData({ ...Data, Name: e.target.value })} name="from_name" type="text" id="Name" className="rounded p-2 focus-visible:outline-0 bg-CodeBg border border-solid border-GeneralGray focus-visible:shadow-[0px_0px_10px_7px_rgba(96,123,150,0.30)]" required />
+                                        <label htmlFor="from_name"  > _name:</label>
+                                        <input onChange={handleChange} name="from_name" type="text" id="from_name" className="rounded p-2 focus-visible:outline-0 bg-CodeBg border border-solid border-GeneralGray focus-visible:shadow-[0px_0px_10px_7px_rgba(96,123,150,0.30)]" required />
                                     </div>
                                     <div className="flex flex-col gap-3 ">
-                                        <label htmlFor="Email" >_email:</label>
-                                        <input onChange={(e: React.ChangeEvent<HTMLInputElement>) => setData({ ...Data, Email: e.target.value })} type="email" id="Email" name="from_email" className="rounded p-2 focus-visible:outline-0 bg-CodeBg border border-solid border-GeneralGray focus-visible:shadow-[0px_0px_10px_7px_rgba(96,123,150,0.30)]" required />
+                                        <label htmlFor="from_email" >_email:</label>
+                                        <input onChange={handleChange} type="email" id="from_email" name="from_email" className="rounded p-2 focus-visible:outline-0 bg-CodeBg border border-solid border-GeneralGray focus-visible:shadow-[0px_0px_10px_7px_rgba(96,123,150,0.30)]" required />
                                     </div>
                                     <div className="flex flex-col gap-3 ">
-                                        <label htmlFor="Message" >_message:</label>
-                                        <textarea onChange={(e: React.ChangeEvent<HTMLTextAreaElement>) => setData({ ...Data, Message: e.target.value })} id="Message" rows={7} name="message" className="rounded bg-CodeBg focus-visible:outline-0 p-2 border border-solid border-GeneralGray focus-visible:shadow-[0px_0px_10px_7px_rgba(96,123,150,0.30)]" required ></textarea>
+                                        <label htmlFor="message" >_message:</label>
+                                        <textarea onChange={handleChange} id="message" rows={7} name="message" className="rounded bg-CodeBg focus-visible:outline-0 p-2 border border-solid border-GeneralGray focus-visible:shadow-[0px_0px_10px_7px_rgba(96,123,150,0.30)]" required ></textarea>
                                     </div>
                                     <input className="text-white bg-ButtonBg w-fit p-2 rounded cursor-pointer" type="submit" value="submit-message" />
                                 </form>
@@ -130,9 +130,9 @@ export default function Contact() {
                             value={`const button = document.querySelector('#sendBtn');
 
 const message = {
-name: "${Data.Name}",
-email: "${Data.Email}",
-message: "${Data.Message}",
+name: "${Data.from_name}",
+email: "${Data.from_email}",
+message: "${Data.message}",
 date: "${formattedDate}"
 }
 
