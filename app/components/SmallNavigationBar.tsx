@@ -2,7 +2,7 @@
 import Image from "next/image";
 import Link from "next/link";
 
-export default function NavbarIcon({toggleShow, Show,pathname}: { toggleShow: () => void, Show: boolean,pathname:string }) {
+export default function SmallNavigationBar({toggleShow, Show,pathname}: { toggleShow: () => void, Show: boolean,pathname:string }) {
 
     return (
         <div className={`fixed ${Show? "scale-100":"scale-0"} inset-0 z-10 bg-MainBg justify-start items-center flex-col duration-700 flex p-4`}>

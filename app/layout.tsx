@@ -1,7 +1,7 @@
-import type {Metadata} from 'next'
-import {Fira_Code} from 'next/font/google'
+import type { Metadata } from 'next'
+import { Fira_Code } from 'next/font/google'
 import './globals.css'
-import {NextFont} from "next/dist/compiled/@next/font";
+import { NextFont } from "next/dist/compiled/@next/font";
 import React from "react";
 import Navbar from "@/app/components/Navbar";
 import Footer from "@/app/components/Footer";
@@ -22,15 +22,15 @@ export const metadata: Metadata = {
     },
 }
 
-export default function RootLayout({children}: { children: React.ReactNode }) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
     return (
         <html lang="en">
             <body className={`${GeneralFont.className} bg-bodyBg p-[2%] text-GeneralGray`}>
-                <Navbar/>
+                <Navbar />
                 <main>
-                   {children}
+                    {children}
                 </main>
-                <Footer/>
+                <Footer />
             </body>
         </html>
     )
